@@ -28,16 +28,19 @@ var Nstyle = `
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
+
 }
 html,
 body {
   color: var(--color0);
   background: var(--color4);
+  Height:100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .links {
-  width: 350px;
+  width:450px;
 }
 .links div {
   display: flex;
@@ -158,7 +161,14 @@ header .menu svg:nth-child(2) {
   font-size: 30px;
   text-shadow: 0px 0px 10px #000;
 }
-@media (max-width: 700px) {
+
+.titel {
+  filter: drop-shadow(2px 3px 2px var(--color1));
+}
+.titel span {
+  color: var(--color1);
+}
+@media (max-width: 800px) {
   .links {
     position: fixed;
     top: 0px;
@@ -201,6 +211,8 @@ header .menu svg:nth-child(2) {
 style.innerHTML+= Nstyle;
 
   document.getElementsByTagName("head")[0].appendChild(style);
+
+
 
 body.innerHTML=`<div class="loaderDiv">
   <p>
@@ -502,7 +514,3 @@ body.style = `
     --color5:${color5};
     --color10:${color10};
     `;
-
-window.addEventListener("load", function () {
-  loaderDiv.style.display = "none";
-});
