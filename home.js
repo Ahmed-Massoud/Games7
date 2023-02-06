@@ -51,7 +51,7 @@ for (let i = 1; i <= recentNum; i++) {
   icon = apps[i - 1].icon;
   page = apps[i - 1].page;
   Rgames.innerHTML += `
-  <a href="game/games.html">
+  <a href="games.html">
   <div>
                  
                      <p>#0${i}</p>
@@ -70,7 +70,7 @@ for (let i = 1; i <= recentNum; i++) {
   icon = apps[i - 1].icon;
   page = apps[i - 1].page;
   Pgames.innerHTML += `
-    <a href="game/games.html">
+    <a href="games.html">
     <div>
                    
                        <p>#0${i}</p>
